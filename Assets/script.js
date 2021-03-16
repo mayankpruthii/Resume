@@ -32,40 +32,40 @@ for (var i = 0; i < navMenuAnchor.length; i++) {
 
 // ========== for autofill skills bar animation ============
 
-var progressBar = document.querySelectorAll(".skill-progress > div");
-var skillsContainer = document.getElementById("skills");
-var animationDone = false;
+// var progressBar = document.querySelectorAll(".skill-progress > div");
+// var skillsContainer = document.getElementById("skills");
+// var animationDone = false;
 
-function initializeBars() {
-    for (let bar of progressBar) {
-        bar.style.width = 0 + '%';
-    }
-}
+// function initializeBars() {
+//     for (let bar of progressBar) {
+//         bar.style.width = 0 + '%';
+//     }
+// }
 
-initializeBars();
+// initializeBars();
 
-function fillBars() {
-    for (let bar of progressBar) {
-        let targetWidth = bar.getAttribute("data-bar-width");
-        let currentWidth = 0;
-        let interval = setInterval(function () {
-            if (currentWidth == targetWidth) {
-                clearInterval(interval);
-                return;
-            }
-            currentWidth++;
-            bar.style.width = currentWidth + '%';
-        }, 20);
-    }
-}
+// function fillBars() {
+//     for (let bar of progressBar) {
+//         let targetWidth = bar.getAttribute("data-bar-width");
+//         let currentWidth = 0;
+//         let interval = setInterval(function () {
+//             if (currentWidth == targetWidth) {
+//                 clearInterval(interval);
+//                 return;
+//             }
+//             currentWidth++;
+//             bar.style.width = currentWidth + '%';
+//         }, 20);
+//     }
+// }
 
-window.addEventListener('scroll', function () {
-    var coordinates = skillsContainer.getBoundingClientRect();
-    if (!animationDone && coordinates.top < window.innerHeight) {
-        animationDone = true;
-        fillBars();
-    }
-});
+// window.addEventListener('scroll', function () {
+//     var coordinates = skillsContainer.getBoundingClientRect();
+//     if (!animationDone && coordinates.top < window.innerHeight) {
+//         animationDone = true;
+//         fillBars();
+//     }
+// });
 
 // ========== for menu ============
 /* Open when someone clicks on the span element */
