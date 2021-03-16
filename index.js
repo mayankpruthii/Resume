@@ -13,10 +13,5 @@ app.get("/", function(req, res) {
     res.render("index");
 })
 
-app.listen(port, function(err) {
-    if(err) {
-        console.log(err);
-        return;
-    }
-    console.log("server running at port ", port);
-})
+app.listen(process.env.PORT || port, 
+           () => console.log("server running at port ", port))
