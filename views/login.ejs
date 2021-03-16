@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="login-signup-card">
+        <div>
+            <img style="display: block; text-align: center; margin: auto; color: red;"
+                src="https://img.icons8.com/pastel-glyph/128/000000/person-male--v1.png" />
+            <p id="select-login-signup">
+                <span id="login-select">Login</span>
+                <span id="signup-select">Signup</span>
+            </p>
+
+            <div id="login">
+                <form>
+                    <input type="text" name="username" placeholder="Username" />
+                    <br>
+                    <input type="password" name="password" placeholder="Password" />
+                    <br>
+                    <input type="checkbox" name="rememberpassword" />
+                    <label for="rememberpassword">Remember Password</label>
+                    <br>
+                    <input type="submit" value="Submit" />
+                </form>
+                <p style="text-align: center; margin: auto;"><a href="/"
+                        style="color: #EA2939; text-decoration: none;">
+                        Forgot Password?
+                    </a>
+                </p>
+            </div>
+            <div id="signup">
+                <form>
+                    <input type="text" name="firstname" placeholder="First Name" />
+                    <br>
+                    <input type="text" name="lastname" placeholder="Last Name" />
+                    <br>
+                    <input type="text" name="phonenumber" placeholder="Whatsapp Number" />
+                    <br>
+                    <input type="email" name="emailid" placeholder="Email id" />
+                    <br>
+                    <input type="text" name="address" placeholder="Address">
+                    <br>
+                    <input type="submit" value="Submit" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#signup").hide();
+            $("#login-select").css("border-bottom", "2px solid #ED2939");
+        });
+        $("#login-select").click(function () {
+            $("#login").show();
+            $("#signup").hide();
+            $("#login-select").css("border-bottom", "2px solid #ED2939");
+            $("#signup-select").css("border-bottom", "0px");
+        });
+        $("#signup-select").click(function () {
+            $("#login").hide();
+            $("#signup").show();
+            $("#login-select").css("border-bottom", "0px");
+            $("#signup-select").css("border-bottom", "2px solid #ED2939");
+        });
+    </script>
+</body>
+
+</html>

@@ -13,5 +13,9 @@ app.get("/", function(req, res) {
     res.render("index");
 })
 
+app.get("/login", function(req, res) {
+    res.render("login");
+})
+
 app.listen(process.env.PORT || port, 
            () => console.log("server running at port ", port))

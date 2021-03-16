@@ -1,0 +1,84 @@
+body {
+    background-color: #8b0000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%238b0000' cx='50' cy='0' r='50'/%3E%3Cg fill='%23900203' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23940406' cx='50' cy='100' r='50'/%3E%3Cg fill='%23990609' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%239e080c' cx='50' cy='200' r='50'/%3E%3Cg fill='%23a30b0f' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a70d11' cx='50' cy='300' r='50'/%3E%3Cg fill='%23ac0f14' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b11217' cx='50' cy='400' r='50'/%3E%3Cg fill='%23b6141a' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23bb161c' cx='50' cy='500' r='50'/%3E%3Cg fill='%23c0181f' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c51a22' cx='50' cy='600' r='50'/%3E%3Cg fill='%23ca1c25' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23cf1e27' cx='50' cy='700' r='50'/%3E%3Cg fill='%23d4202a' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23d9222d' cx='50' cy='800' r='50'/%3E%3Cg fill='%23de2330' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e32533' cx='50' cy='900' r='50'/%3E%3Cg fill='%23e82736' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ed2939' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: contain;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.login-signup-card {
+    width: 40%;
+    margin: auto;
+    margin-top: 15vh;
+    background-color: white;
+    position: relative;
+    padding: 40px 0px 40px 0px;
+}
+
+p {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+textarea, input {
+    font-size: 18px;
+    margin-bottom: 1.2em;
+    width: 50%;
+    border: 0px;
+    border-bottom: 1px solid #ED2939;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+    border-bottom: 3px solid #ED2939;
+}
+
+input[type="submit"] {
+    background-color: #ED2939;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    background: #ED2939;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #ED2939;
+}
+
+input[type="submit"]:hover {
+    color: #ED2939;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    border: 2px solid #ED2939;
+}
+
+#select-login-signup {
+    margin-bottom: 60px;
+}
+
+#select-login-signup span{
+    padding: 14px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .login-signup-card{
+        width: 90%;
+        margin: auto;
+        margin-top: 10vh;
+    }
+    textarea, input {
+        width: 70%;
+    }
+}
